@@ -1,0 +1,23 @@
+:root {
+  --imageWidth_100: 100%;
+
+  --pageBackgroundColor: #1c5550;
+
+  --headerNavFontSize: 24px;
+
+  --headerNavTextColor: #dfd9d9;
+
+  --asideHeadingColor: #c3b97f;
+
+  --asideNavTextSize: 14px;
+
+  --asideNavTextColor: #91b599;
+
+  --cardsSectionBackgroundColor: #dfd9d9;
+
+  --priceColor: #1c5550;
+
+  --buttonBackgroundColor: #c3b97f;
+
+  --buttonTextColor: #dfd9d9;
+}

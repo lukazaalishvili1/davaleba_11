@@ -1,0 +1,187 @@
+/* import fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* import variables */
+
+@import url(variable.css);
+
+/* container */
+.container {
+  width: min(100%, 1440px);
+  display: grid;
+  margin: auto;
+  padding: 32px 20px;
+  gap: 48px 40px;
+  background-color: var(--pageBackgroundColor);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 48px 146px 146px 220px;
+  grid-template-areas:
+    "HEADER HEADER HEADER HEADER"
+    "ASIDE SECTION1 SECTION1 SECTION_2_3"
+    "ASIDE SECTION1 SECTION1 SECTION_2_3"
+    "CARD1 CARD2 CARD3 CARD4";
+}
+/* header */
+header {
+  grid-area: HEADER;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* header ul */
+.header_nav_ul {
+  display: flex;
+  gap: 80px;
+}
+
+.header_li_a {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  color: var(--headerNavTextColor);
+  font-size: var(--headerNavFontSize);
+}
+
+.header_li_a:hover {
+  font-size: 18px;
+}
+
+/* HEADER BUTTON */
+.header_button {
+  border: none;
+  background-color: #1c5550;
+  height: 32px;
+}
+
+.user_icon_img,
+.cart_icon_img {
+  height: 100%;
+}
+
+.header_button:hover {
+  height: 80%;
+}
+
+/* ASIDE */
+.aside {
+  width: 100%;
+  grid-area: ASIDE;
+  background-color: #00000033;
+  box-shadow: 0px 4px 4px 0px #00000033 inset;
+  padding: 38px 115px 54px 40px;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+/* aside heading */
+
+.aside_heading {
+  margin-bottom: 16px;
+  color: var(--asideHeadingColor);
+}
+
+.aside_nav_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* aside ul text */
+.aside_li_a {
+  color: var(--asideNavTextColor);
+  font-size: var(--asideNavTextSize);
+}
+
+.aside_li_a:hover {
+  font-size: 12px;
+}
+
+/* SECTION 1 */
+.section1 {
+  grid-area: SECTION1;
+}
+
+/* SECTION 2 AND 3 */
+.section_2_3 {
+  grid-area: SECTION_2_3;
+
+  display: grid;
+
+  row-gap: 48px;
+}
+
+.section2 {
+  grid-area: SECTION2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.section3 {
+  grid-area: SECTION3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* CARD 1 */
+.card1 {
+  grid-area: CARD1;
+}
+/* CARD 2 */
+.card2 {
+  grid-area: CARD2;
+}
+/* CARD3 */
+.card3 {
+  grid-area: CARD3;
+}
+/* CARD4 */
+.card4 {
+  grid-area: CARD4;
+}
+
+/* image 100%  */
+.image_100_width {
+  width: var(--imageWidth_100);
+}
+
+/* card section */
+
+.card_section {
+  /* margin -4px _s ro ar vwer image_s da seqcias shoris dashorebaa da ise ver vaaxloveb ertmanettan */
+  margin-top: -4px;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cardsSectionBackgroundColor);
+}
+
+/* card section add to cart button */
+.card_section_button {
+  font-family: "Inter", serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  border: none;
+  background-color: var(--buttonBackgroundColor);
+  height: 100%;
+  color: var(--buttonTextColor);
+  cursor: pointer;
+}
+
+.card_section_button:hover {
+  background-color: #80763f;
+}
+
+/* card price tag */
+
+.card_price_tag {
+  font-family: "Inter", serif;
+  margin-left: 8px;
+  color: var(--priceColor);
+  font-weight: 700;
+}
